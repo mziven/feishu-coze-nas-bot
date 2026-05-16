@@ -1,0 +1,7 @@
+services:
+  feishu-coze-bot:
+    build: .
+    container_name: feishu-coze-bot
+    restart: unless-stopped
+    env_file:
+      - .env
